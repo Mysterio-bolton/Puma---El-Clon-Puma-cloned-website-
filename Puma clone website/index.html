@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PUMA — Landing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .brand { font-weight:700; letter-spacing:1px; }
+    .hero-caption { background: rgba(0,0,0,0.4); color: #fff; padding: 2rem; border-radius: .5rem; }
+    .product-card img { height: 220px; object-fit: cover; }
+    body {
+     font-family: Comic sans MS;
+}
+  </style>
+</head>
+<body>
+<div>
+  <p class="mb-0"  style="text-align: center;">Puma - El clone</p>
+  <p  class="mb-0"  style="text-align: center;"> Always feel free to   <a href="https://uk.puma.com/uk/en/running-shoe-finder" style="text-decoration: underline; color: black;">     Explore Much More</a></a></p>
+</div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+       <a class="navbar-brand brand ms-2" href="#"></a>
+          
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Products.html" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="Products.html#Clothings">Clothings</a></li>
+              <li><a class="dropdown-item" href="Products.html#Shoes">Shoes</a></li>
+              <li><a class="dropdown-item" href="Products.html#Accessories">Accessories</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="Products.html#Collections">Collections</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+          <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
+          <li class="nav-item ms-2"><a class="btn btn-outline-light btn-sm" href="#">Sign In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- HERO / CAROUSEL -->
+  <header id="home" class="mb-5">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Casual.png" class="d-block w-100" alt="Stay Casual" style="height: 750px;">
+          <div class="container position-absolute top-50 start-50 translate-middle text-center hero-caption">
+            <h1 class="display-5 fw-bold">Performance Meets Style</h1>
+            <p class="lead mb-3">Discover the latest performance footwear and apparel.</p>
+            <a class="btn btn-light btn-lg" href="#featured">Shop Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Carosel2.png" class="d-block w-100" alt="pounce on it" style="height: 750px;">
+          <div class="container position-absolute top-50 start-50 translate-middle text-center hero-caption">
+            <h1 class="display-6 fw-bold">New Arrivals</h1>
+            <p class="mb-3">Fresh drops for the season — limited stock.</p>
+            <a class="btn btn-light" href="#featured">Browse</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Carosel1.png" class="d-block w-100" alt="ShoesthatmakeupPUMA" style="height: 750px;">
+          <div class="container position-absolute top-50 start-50 translate-middle text-center hero-caption">
+            <h1 class="display-6 fw-bold">Classic Icons</h1>
+            <p class="mb-3">Time-tested silhouettes reimagined.</p>
+            <a class="btn btn-light" href="#featured">Explore</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+  </header>
+
+  <!-- FEATURED PRODUCTS -->
+  <section id="featured" class="container mb-5">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <div>
+        <h2 class="mb-0">Featured</h2>
+        <small class="text-muted">Top picks this week</small>
+      </div>
+      <a href="#" class="text-decoration-none">View all »</a>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Running.png" class="card-img-top" alt="Runner shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">FastRunner 2.0</h5>
+            <p class="text-muted small mb-2">Men • Running</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$89.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="CourtTrainer.png" class="card-img-top" alt="Trainer shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Court Trainer</h5>
+            <p class="text-muted small mb-2">Unisex • Cross-train</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$74.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Own the Place.png" class="card-img-top" alt="Lifestyle shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Own the Place</h5>
+            <p class="text-muted small mb-2">Unisex • Lifestyle</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$64.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- INFO BANNERS -->
+  <section id="info-banners" class="bg-light py-4 mb-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <h6 class="mb-1">Free Shipping</h6>
+          <small class="text-muted">On orders over $75</small>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="mb-1">Easy Returns</h6>
+          <small class="text-muted">30-day returns policy</small>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="mb-1">Secure Payment</h6>
+          <small class="text-muted">Multiple payment options</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-8">
+          <div class="p-4 rounded-3 border bg-white">
+            <div class="row g-3 align-items-center">
+              <div class="col-md-6">
+                <h5 class="mb-1">Join our newsletter</h5>
+                <p class="small text-muted mb-0">Get exclusive drops and offers.</p>
+              </div>
+              <div class="col-md-6">
+                <form class="row g-2">
+                  <div class="col-8">
+                    <input type="email" class="form-control form-control-lg" placeholder="Your email" aria-label="Email">
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-primary w-100 btn-lg" type="submit">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white pt-4 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h6 class="mb-2">PUMA Clone</h6>
+          <p class="small text-muted">A simple landing page created with Bootstrap.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="mb-2">Help</h6>
+          <ul class="list-unstyled small">
+            <li><a class="text-white-50 text-decoration-none" href="#">Customer Service</a></li>
+            <li><a class="text-white-50 text-decoration-none" href="#">Shipping</a></li>
+            <li><a class="text-white-50 text-decoration-none" href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="mb-2">Legal</h6>
+          <ul class="list-unstyled small">
+            <li><a class="text-white-50 text-decoration-none" href="#">Terms</a></li>
+            <li><a class="text-white-50 text-decoration-none" href="#">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary">
+        <small class="text-white-50">© 2025 Puma Clone</small>
+        <div>
+          <a class="text-white-50 text-decoration-none me-3" href="https://instagram.com/puma.uk?igshid=YzAyZWRlMzg=">Instagram</a>
+          <a class="text-white-50 text-decoration-none" href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body></html>

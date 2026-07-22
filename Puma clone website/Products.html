@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        .brand { font-weight:700; letter-spacing:1px; }
+        hr{ width:5px solid;}
+        .product-card img { height: 220px; object-fit: cover; }
+        body {
+        font-family: Comic Sans MS; background-color: rgba(0,0,0,0.4);}
+       .hero-caption { background: rgba(0,0,0,0.4); color: #fff; padding: 2rem; border-radius: .5rem; }
+       .Alignment{ text-align: center; align-items: center; display: flex; justify-content: center;}
+       .image-coniner:hover img{
+        visibility: visible;
+        opacity: 1;
+        transition: transform 0.3s ease;
+        transform: translate(-50%, -50%);
+        position: relative;
+       }
+       .Carosel-length{
+        height: 350px;
+       }
+
+    </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+       <a class="navbar-brand brand ms-2" href="#">PUMA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2 r-0 rounded-pill" style="width: 250px;" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-link active" href="#Products" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="Products.html#Clothings">Clothings</a></li>
+              <li><a class="dropdown-item" href="Products.html#Shoes">Shoes</a></li>
+              <li><a class="dropdown-item" href="Products.html#Accessories">Accessories</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="Products.html#Collections">Collections</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+          <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
+          <li class="nav-item ms-2"><a class="btn btn-outline-light btn-sm"   href="#">Sign In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / CAROUSEL -->
+  <header id="home" class="mb-5">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Clothing section/product landing image(3).webp" class="d-block w-100 Carosel-length" alt="Stay Casual" style="height: 850px;">
+          <div class="container position-absolute top-50 start-50 translate-middle text-center hero-caption">
+            <h1 class="display-5 fw-bold">Style that speaks for itself</h1>
+            <p class="lead mb-3">Efortlessly, Elegantly</p>
+            <a class="btn btn-light btn-lg" href="#featured">Shop Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Clothing section/product landing image (unisex).webp" class="d-block w-100 Carosel-length" alt="pounce on it" style="height: 850px;">
+          <div class="container position-absolute top-50 start-50 translate-middle text-center hero-caption">
+            <h1 class="display-6 fw-bold">New Arrivals</h1>
+            <p class="mb-3">Fresh drops for the season — limited stock.</p>
+            <a class="btn btn-light" href="#featured">Browse</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Clothing section/product landing image(2).avif" class="d-block w-100 Carosel-length" alt="ShoesthatmakeupPUMA" style="height: 850px;">
+          <div class="container position-absolute top-50 start-50 translate-middle text-center hero-caption">
+            <h1 class="display-6 fw-bold">Simplicity - the keynote to true elegance</h1>
+            <p class="mb-3">Re-invent yourself</p>
+            <a class="btn btn-light" href="#featured">Explore</a>
+          </div>
+        </div>
+      </div><!--- remen=ber to use videos for the video webpage-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+
+    <section id="featured" class="container mb-5">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <div>
+      </div>
+    </div>
+
+    <div class="mb-0">
+        <hr>
+        <h2   id="Clothings"  class="Alignment">Clothing Section</h2>
+        <hr>
+    </div>
+    
+    
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+        <div class="image-coniner">
+          <img src="Clothing section/CLRT-Ripstop-Pants-Unisex.avif" class="card-img-top" style="height: 300px;" alt="Runner shoe">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title mb-1">Rip💀stop Pants</h5>
+            <p class="text-muted small mb-2">Women • Lifestyle</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$79.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Clothing section/PUMA-x-HYROX-CLOUDSPUN-ThermoAdapt-Tank-Men.avif" class="card-img-top"  style="height: 300px;"  alt="Trainer shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Tank top</h5>
+            <p class="text-muted small mb-2">Men • Gym</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$54.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-9 col-md-4">
+        <div class="card product-card shadow-sm mb-5">
+          <img src="Clothing section/PUMA-x-SONIC-THE-HEDGEHOG-Relaxed-Shorts-Men.avif" class="card-img-top" style="height: 300px;" alt="Lifestyle Men Sonics">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Sonic The what? </h5>
+            <p class="text-muted small mb-2">Men • Lifestyle</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$99.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+  <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Clothing section/polar fleece vest in black.png" class="card-img-top" style="height: 300px;" alt="Runner shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Polar fleece jacket</h5>
+            <p class="text-muted small mb-2">Men • Running</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$89.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Clothing section/heavy bomber jacket.webp" class="card-img-top" style="height: 300px;" alt="Trainer shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Heavy Bomber jacket</h5>
+            <p class="text-muted small mb-2">Unisex • Casual</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$74.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm mb-5">
+          <img src="Clothing section/women (top and trouser) Casual.avif" class="card-img-top" style="height: 300px;" alt="Lifestyle shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Jacked Jacket(white and black)</h5>
+            <p class="text-muted small mb-2">Women • Lifestyle</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$64.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Clothing section/tracksuit.avif" class="card-img-top" style="height: 300px;" alt="Runner shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Polar fleece jacket</h5>
+            <p class="text-muted small mb-2">Men • Outdoor</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$89.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Clothing section/puma sportswear joggers.webp" class="card-img-top" style="height: 300px;" alt="Trainer shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Heavy Bomber jacket</h5>
+            <p class="text-muted small mb-2">Unisex • Casual</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$74.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Clothing section/Neymar and puma .webp" class="card-img-top" style="height: 300px;" alt="Lifestyle shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Jacked Jacket(white and black)</h5>
+            <p class="text-muted small mb-2">Women • Lifestyle</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$64.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="featured" class="container mb-5">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <div>
+      </div>
+    </div>
+
+    <div class="mb-0">
+        <hr>
+        <h2    id="Shoes" class="Alignment">Shoes Section</h2>
+        <hr>
+    </div>
+    
+    
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+        <div class="image-coniner">
+          <img src="Shoes/311347-01-puma-Stewie-4-Timeless-Basketball-Shoes-Women8Stewie 4 Timeless.webp" class="card-img-top" style="height: 300px;" alt="Runner shoe">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title mb-1">Stewie 4 Timeless</h5>
+            <p class="text-muted small mb-2">Women • Basketball</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$100.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Shoes/Classic Puma Roma.webp" class="card-img-top"  style="height: 300px;"  alt="Trainer shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Sneakers</h5>
+            <p class="text-muted small mb-2">Unisex • Classic</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$54.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-9 col-md-4">
+        <div class="card product-card shadow-sm mb-5">
+          <img src="Shoes/Puma easy rider Vintage trainers in black.avif" class="card-img-top" style="height: 300px;" alt="Lifestyle Men Sonics">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Vinatage Rider 007 </h5>
+            <p class="text-muted small mb-2">Men • Vintage</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$78.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+  <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Shoes/Puma Future 8.webp" class="card-img-top" style="height: 300px;" alt="Runner shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Into the Future</h5>
+            <p class="text-muted small mb-2">Unisex • Football</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$85.60</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Shoes/puma-future-8-ultimate-mxsg-puma-black-cool-light-gray-fluo-green.webp" class="card-img-top" style="height: 300px;" alt="Trainer shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Future 8 MXSG</h5>
+            <p class="text-muted small mb-2">Unisex • Football</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$74.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm mb-5">
+          <img src="Shoes/puma-rise-nitro. RunRepeat.webp" class="card-img-top" style="height: 300px;" alt="Lifestyle shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Rise Nitron</h5>
+            <p class="text-muted small mb-2">Unisex • Basketball</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$40.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Shoes/rick and morty house of heat MB.01.webp" class="card-img-top" style="height: 300px;" alt="Runner shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Auz of it {MB.01}</h5>
+            <p class="text-muted small mb-2">Men • Basketball</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$69.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Shoes/Rick and morty MB.02 Basketball shoes.webp" class="card-img-top" style="height: 300px;" alt="Trainer shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Rick and Morty MB.02</h5>
+            <p class="text-muted small mb-2">Men • Running</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$79.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Shoes/Youth Court pro(Sneakers).webp" class="card-img-top" style="height: 300px;" alt="Lifestyle shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Court of the Youth</h5>
+            <p class="text-muted small mb-2">Unisex • Sneakers</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$65</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section id="featured" class="container mb-5">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <div>
+      </div>
+    </div>
+
+    <div class="mb-0">
+        <hr>
+        <h2     id="Accessories" class="Alignment">Accessories Section</h2>
+        <hr>
+    </div>
+    
+    
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+        <div class="image-coniner">
+          <img src="Accessories/girl bag.webp" class="card-img-top" style="height: 300px;" alt="Runner shoe">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title mb-1">Stewie 4 Timeless</h5>
+            <p class="text-muted small mb-2">Women • Basketball</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$100.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Accessories/-PUMA-x-Hyrox-Unisex-Training-Scarf women.webp" class="card-img-top"  style="height: 300px;"  alt="Trainer shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Sneakers</h5>
+            <p class="text-muted small mb-2">Unisex • Classic</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$54.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-9 col-md-4">
+        <div class="card product-card shadow-sm mb-5">
+          <img src="Accessories/Fenty Puma lace up choker" class="card-img-top" style="height: 300px;" alt="Lifestyle Men Sonics">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Vinatage Rider 007 </h5>
+            <p class="text-muted small mb-2">Men • Vintage</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$78.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+  <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Accessories/Fenty Puma lace up choker(2).webp"card-img-top" style="height: 300px;" alt="Runner shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Into the Future</h5>
+            <p class="text-muted small mb-2">Unisex • Football</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$85.60</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Accessories/FENTY-x-PUMA-Scarf.avif" class="card-img-top" style="height: 300px;" alt="Trainer shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Future 8 MXSG</h5>
+            <p class="text-muted small mb-2">Unisex • Football</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$74.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm mb-5">
+          <img src="Accessories/puma cougar ring- silver wild cat power jewelry.webp" class="card-img-top" style="height: 300px;" alt="Lifestyle shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Rise Nitron</h5>
+            <p class="text-muted small mb-2">Unisex • Basketball</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$40.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Accessories/scarves-gloves-puma-x-kidsuper-unisex-scarf unisex.webp" class="card-img-top" style="height: 300px;" alt="Runner shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Auz of it {MB.01}</h5>
+            <p class="text-muted small mb-2">Men • Basketball</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$69.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Shoes/Rick and morty MB.02 Basketball shoes.webp" class="card-img-top" style="height: 300px;" alt="Trainer shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Rick and Morty MB.02</h5>
+            <p class="text-muted small mb-2">Men • Running</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$79.99</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card product-card shadow-sm">
+          <img src="Shoes/Youth Court pro(Sneakers).webp" class="card-img-top" style="height: 300px;" alt="Lifestyle shoe">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Court of the Youth</h5>
+            <p class="text-muted small mb-2">Unisex • Sneakers</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>$65</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

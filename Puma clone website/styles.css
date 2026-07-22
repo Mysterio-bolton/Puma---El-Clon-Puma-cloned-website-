@@ -1,0 +1,79 @@
+/*
+Source - https://stackoverflow.com/a/70950217
+Posted by KJEK-Code, modified by community. See post 'Timeline' for change history
+Retrieved 2025-11-19, License - CC BY-SA 4.0
+*/
+
+.video-container {
+  /* positions video based on ancestor */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avantages {
+  background: white;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+.header {
+  /* header is still in the document this tell advantages section how far down to be */
+  height: 100vh;
+}
+
+#logo {
+  /* just for the example you can delete this */
+  border: 1px solid black;
+}
+
+.header-nav {
+  /* places nav based on ancestor you can use position fixed if you want the links to follow you */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* makes sure its above the video */
+  z-index: 1;
+  /* places logo and links side by side then centers them them spreads them to either side */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* places links side by side */
+  display: flex;
+}
+
+.header-nav ul a {
+  /* spaces out links */
+  padding: 1rem;
+}
+
+.hero-text {
+  width: 50%;
+  /* positioned relative to its starting position */
+  position: relative;
+  /* makes sure its above the video */
+  z-index: 2;
+  /* moves the top left corner to the center */
+  top: 50%;
+  left: 50%;
+  /* moves the moves the object 50% of its own height and width centering it */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
